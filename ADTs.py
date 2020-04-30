@@ -20,6 +20,9 @@ class queue:
 	def back(self):
 		return self._container[-1]
 	
+	def at(self, index):
+		return self._container[index]
+	
 	def length(self):
 		return len(self._container)
 	
@@ -73,6 +76,9 @@ class priority_queue:
 	
 	def back(self):
 		return self._container[-1]
+	
+	def at(self, index):
+		return self._container[index]
 	
 	def length(self):
 		return len(self._container)
