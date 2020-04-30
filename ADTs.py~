@@ -62,7 +62,7 @@ class priority_queue:
 			
 	def dequeue(self):
 		element = self._container[0]
-		self._container.pop(0)
+		self.pop(0)
 		return element
 	
 	def front(self):
