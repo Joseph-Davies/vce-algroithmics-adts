@@ -37,7 +37,7 @@ class queue:
 		output += "}"
 		return output
 	
-	def __repr(self):
+	def __repr__(self):
 		output = "queue {"
 		output += str(self._container[0])
 		for element in self._container[1:]:
