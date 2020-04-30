@@ -62,7 +62,7 @@ class priority_queue:
 			
 	def dequeue(self):
 		element = self._container[0]
-		self.pop(0)
+		self._container.pop(0)
 		return element
 	
 	def front(self):
@@ -92,4 +92,50 @@ class priority_queue:
 			output += ", " + str(element)
 		output += "}"
 		return output
+
+class stack:
+	def __init__(self):
+		self._container = list()
+	
+	def push(self, element):
+		self._container.append(element)
+	
+	def pop(self):
+		element = self._container[-1]
+		self._container.pop()
+		return element
+	
+	def top(self):
+		return self._container[-1]
+	
+	def botom(self):
+		return self._container[0]
+	
+	def at(self, index):
+		return self._container[-1 * (index + 1)]
+	
+	def length(self):
+		return len(self._container)
+	
+	def __len__(self):
+		return len(self._container)
+	
+	def __str__(self):
+		output = "stack {"
+		output += str(self._container[-1])
+		for element in self._container[1::-1]:
+			output += ", " + str(element)
+		output += "}"
+		return output
+		
+	def __repr__(self):
+		output = "stack {"
+		output += str(self._container[-1])
+		for element in self._container[1::-1]:
+			output += ", " + str(element)
+		output += "}"
+		return output
+	
+	def to_list(self):
+		return self._container[::-1]
 
