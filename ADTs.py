@@ -41,6 +41,9 @@ class queue:
 			output += ", " + str(element)
 		output += "}"
 		return output
+	
+	def to_list(self):
+		return self._container
 
 class priority_queue:
 	def __init__(self):
@@ -92,6 +95,9 @@ class priority_queue:
 			output += ", " + str(element)
 		output += "}"
 		return output
+	
+	def to_list(self):
+		return self._container
 
 class stack:
 	def __init__(self):
@@ -136,5 +142,6 @@ class stack:
 		output += "}"
 		return output
 	
-	
+	def to_list(self):
+		return self._container[::-1]
 
