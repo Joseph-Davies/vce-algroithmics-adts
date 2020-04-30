@@ -1,5 +1,5 @@
 #/usr/bin/python
-#Joseph Daviesn 2020
+#Joseph Davies 2020
 #https://github.com/Joseph-Davies/vce-algroithmics-adts
 
 class queue:
